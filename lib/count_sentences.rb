@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     counter = 0
-    self.split('!', ".", '?').each {|sentence| counter +=1 }
+    self.split(/[!?.] /).each {|sentence| counter +=1 }
   end
 end
